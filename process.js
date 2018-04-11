@@ -13,7 +13,7 @@ Promise.fromCallback((cb) => {
         return Promise.fromCallback((cb) => {
           lenna
             .opacity(0.8)
-            .write('./processed/' + lineItem, cb)
+            .write('./processed/' + lineItem.split('.')[0] + '.png', cb)
         })
       })
   })
